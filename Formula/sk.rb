@@ -1,8 +1,8 @@
 class Sk < Formula
   desc "Switch Kontext - quickly move between Kubernetes contexts and namespaces"
   homepage "https://github.com/erikkinding/sk"
-  url "https://github.com/erikkinding/sk/archive/refs/tags/v0.3.13.tar.gz"
-  sha256 "d925822eefabda3492151165a45bdb57b9223789414f1bcf5fbb01d68a494b21"
+  url "https://github.com/erikkinding/sk/archive/refs/tags/v0.3.14.tar.gz"
+  sha256 "087e9a8d5c552cf7a459a3a626fa874cd20e60112e39f30e66c808b21602e5cb"
   license "MIT"
 
   depends_on "go" => :build
