@@ -1,25 +1,25 @@
 class Sk < Formula
   desc "Switch Kontext - quickly move between Kubernetes contexts and namespaces"
   homepage "https://github.com/erikkinding/sk"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/erikkinding/sk/releases/download/v0.4.0/sk_darwin_arm64.tar.gz"
-      sha256 "e48eaaaf6e1aab982d7c6fd42be21c145464ab0b3c0af30d6a543fd266f97334"
+      url "https://github.com/erikkinding/sk/releases/download/v0.4.1/sk_darwin_arm64.tar.gz"
+      sha256 "6a3da167ed409a8f2f75641b90b61e9acec2fdd77003dd06cbcda2dfa6fc14dd"
     end
 
     on_intel do
-      url "https://github.com/erikkinding/sk/releases/download/v0.4.0/sk_darwin_amd64.tar.gz"
-      sha256 "f84545f711a569c370faa808245ce865edc3f8d64a8908e4d22a070ab1bcade8"
+      url "https://github.com/erikkinding/sk/releases/download/v0.4.1/sk_darwin_amd64.tar.gz"
+      sha256 "165e71c3b09d13230cf30594acc3107589d1a0f72f808cf8b1da26f089ea7930"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/erikkinding/sk/releases/download/v0.4.0/sk_linux_amd64.tar.gz"
-      sha256 "89ec8fd02c3c990d7ffe0cd2be2b97593e2f4b96f0863434768adf309dc39c67"
+      url "https://github.com/erikkinding/sk/releases/download/v0.4.1/sk_linux_amd64.tar.gz"
+      sha256 "767636e7a35724bc0fa144d7eac2ab87f4c3e0411f0d5ec406d67eb9083d272c"
     end
   end
 
