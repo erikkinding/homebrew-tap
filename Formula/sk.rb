@@ -1,12 +1,30 @@
 class Sk < Formula
   desc "Switch Kontext - quickly move between Kubernetes contexts and namespaces"
   homepage "https://github.com/erikkinding/sk"
-  url "https://github.com/erikkinding/sk/archive/refs/tags/v0.3.15.tar.gz"
-  sha256 "34ed05856134c36dd5eb95e89040b834abb2a04874d3763b01d6479193233763"
+  version "0.3.15"
   license "MIT"
 
+  on_macos do
+    on_arm do
+      url "https://github.com/erikkinding/sk/releases/download/v0.3.15/sk_darwin_arm64.tar.gz"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    end
+
+    on_intel do
+      url "https://github.com/erikkinding/sk/releases/download/v0.3.15/sk_darwin_amd64.tar.gz"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/erikkinding/sk/releases/download/v0.3.15/sk_linux_amd64.tar.gz"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    end
+  end
+
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w")
+    bin.install "sk"
   end
 
   test do
