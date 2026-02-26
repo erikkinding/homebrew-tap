@@ -5,8 +5,6 @@ class Sk < Formula
   sha256 "34ed05856134c36dd5eb95e89040b834abb2a04874d3763b01d6479193233763"
   license "MIT"
 
-  depends_on "go" => :build
-
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w")
   end
